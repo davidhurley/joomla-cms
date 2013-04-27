@@ -113,6 +113,7 @@ class TagsModelTags extends JModelList
 		$groups	= implode(',', $user->getAuthorisedViewLevels());
 		$pid = $this->getState('tag.parent_id');
 		$orderby = $this->state->params->get('all_tags_orderby', 'title');
+		$published = $this->state->params->get('published', 1);
 		$orderDirection = $this->state->params->get('all_tags_orderby_direction', 'ASC');
 		$language = $this->getState('tag.language');
 
@@ -175,6 +176,8 @@ class TagsModelTags extends JModelList
 		{
 			$query->where($this->_db->quoteName('a.title') . ' LIKE ' . $this->_db->quote('%' . $this->state->get('list.filter') . '%'));
 		}
+
+		$query->where($this->_db->quoteName('a.published'). ' = ' . $published);
 
 		$query->order($db->quoteName($orderby) . ' ' . $orderDirection . ', a.title ASC');
 
