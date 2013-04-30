@@ -17,7 +17,7 @@ JHtml::_('behavior.tooltip');
 JHtml::_('behavior.framework');
 ?>
 <?php if ($this->item->state == 0) : ?>
-	<span class="label label-warning"><?php echo JText::_('JUNPUBLISHED'); ?></span>
+	<div><span class="label label-warning"><?php echo JText::_('JUNPUBLISHED'); ?></span>
 <?php endif; ?>
 
 <?php echo JLayoutHelper::render('joomla.content.blog_style_default_item_title', $this->item); ?>
