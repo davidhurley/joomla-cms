@@ -248,7 +248,7 @@ $stickyToolbar = $this->params->get('stickyToolbar', '1');
 			<jdoc:include type="modules" name="bottom" style="xhtml" />
 			<!-- End Content -->
 		</section>
-		<hr />
+
 		<?php if (!$this->countModules('status')) : ?>
 			<footer class="footer">
 				<p>&copy; <?php echo $sitename; ?> <?php echo date('Y');?></p>
