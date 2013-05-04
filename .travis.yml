@@ -11,6 +11,6 @@ before_script:
   - phpenv rehash
 
 script:
-  - phpunit --configuration ./travisci-phpunit.xml
+  - phpunit --configuration travisci.phpunit.xml
   - phpcs -i
   - phpcs --report=full -p -w -vv --standard=build/phpcs/Joomla/ruleset.xml
