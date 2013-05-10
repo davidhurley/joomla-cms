@@ -163,7 +163,7 @@ class JUcmContent extends JUcmBase
 			}
 		}
 
-		if (array_key_exists('special', $ucmData))
+		if (array_key_exists('special', $fields))
 		{
 			foreach ($fields['special'][0] as $i => $field)
 			{
