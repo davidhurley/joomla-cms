@@ -123,6 +123,8 @@ else
 					</li>
 			<?php } ?>
 			</ul>
-	<?php }
+	<?php } ?>
+		</ul>
+	</div>
 	}
 }
