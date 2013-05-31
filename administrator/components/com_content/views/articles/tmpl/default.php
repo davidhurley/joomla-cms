@@ -122,7 +122,7 @@ $assoc		= isset($app->item_associations) ? $app->item_associations : 0;
 					<th width="10%" class="nowrap hidden-phone">
 						<?php echo JHtml::_('grid.sort', 'JDATE', 'a.created', $listDirn, $listOrder); ?>
 					</th>
-					<th width="5%">
+					<th width="10%">
 						<?php echo JHtml::_('grid.sort', 'JGLOBAL_HITS', 'a.hits', $listDirn, $listOrder); ?>
 					</th>
 					<th width="1%" class="nowrap hidden-phone">
