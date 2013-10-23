@@ -417,7 +417,7 @@ class JUri
 		$this->vars[$name] = $value;
 
 		// Empty the query
-		$this->query = null;
+		// $this->query = null;
 
 		return $tmp;
 	}
